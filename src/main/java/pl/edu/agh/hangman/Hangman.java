@@ -68,7 +68,7 @@ public class Hangman {
 
         WordCrypter wordCrypter = new WordCrypter(randomWordString);
 
-        System.out.println(randomWordString);
+        //System.out.println(randomWordString);
         System.out.println("WITAJ W GRZE WIESIELEC!!!");
         System.out.println("Poniżej wyświetla się zakodowane słowo");
         System.out.println(wordCrypter.cryptWord());
