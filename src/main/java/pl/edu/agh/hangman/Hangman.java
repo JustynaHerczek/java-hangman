@@ -60,7 +60,6 @@ public class Hangman {
     public static void main(String[] args) {
         WordCrypter wordCrypter = new WordCrypter("kretoszczur");
 
-        //System.out.println(wordCrypter.cryptWord().length());
         System.out.println("kretoszczur".length());
         System.out.println("WITAJ W GRZE WIESIELEC!!!");
         System.out.println("Poniżej wyświetla się zakodowane słowo");
