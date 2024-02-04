@@ -5,14 +5,18 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class WordReader {
 
-    private List<String> uppercaseWords = new ArrayList<>();
+    private final ArrayList<String> uppercaseWords = new ArrayList<>();
 
-    public void readFile() throws IOException {
-        File file = new File("/home/students/k/a/kadlubic/java-hangman/src/main/resources/slowa.txt");
+    public ArrayList<String> getUppercaseWords() {
+        return uppercaseWords;
+    }
+
+    public void readFile() {
+        File file = new File("src/main/resources/slowa.txt");
         String line;
 
         try (BufferedReader reader = Files.newBufferedReader(file.toPath())) {
@@ -21,7 +25,7 @@ public class WordReader {
         } catch (IOException x) {
             System.err.format("IOException: %s", x);
         }
-        for (String word : uppercaseWords)
-            System.out.println(word);
+//        for (String word : uppercaseWords)
+//            System.out.println(word);
     }
 }
